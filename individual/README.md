@@ -42,5 +42,5 @@ All logic is implemented in a single file (`MSMS.py`) and all data will be lost 
 
 1. Open Terminal and go to the project folder:
    ```bash
-   cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual
+   cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
 
