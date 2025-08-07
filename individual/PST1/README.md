@@ -5,20 +5,20 @@
 
 ---
 
-##  Project Overview
+## Project Overview
 
-This is the first stage (PST1) of a multi-phase software engineering project. The goal is to create a basic Music School Management System (MSMS) that supports core functionalities using **in-memory data structures** only.
+This is the first stage (PST1) of a multi-phase software engineering project. The goal is to develop a basic Music School Management System (MSMS) that supports core operations using **in-memory data structures** only.
 
-All logic is implemented in a single file (`MSMS.py`) and all data will be lost once the program stops — perfect for quick iteration and focusing on logic.
+The system logic is implemented in a single file (`MSMS.py`). Since this is an in-memory prototype, all data will be lost once the program stops — ideal for focusing on functionality and logic design.
 
 ---
 
-##  Features Implemented
+## Features Implemented
 
 ### Fragment 1.1 – Data Structures
 - `Student` class (ID, name, list of instruments)
 - `Teacher` class (ID, name, specialty)
-- `student_db` and `teacher_db` as in-memory "databases"
+- In-memory "databases": `student_db`, `teacher_db`
 - Auto-incrementing ID counters
 
 ### Fragment 1.2 – Core Helper Functions
@@ -33,14 +33,13 @@ All logic is implemented in a single file (`MSMS.py`) and all data will be lost 
 - `front_desk_lookup(term)`
 
 ### Fragment 1.4 – Main Menu Loop
-- Interactive console menu using `while True`
-- Accepts user input and runs front desk features
+- Interactive console menu for receptionist role
+- Accepts user input for registration, enrolment, and search
 
 ---
 
-##  How to Run
+## How to Run
 
-1. Open Terminal and go to the project folder:
+1. Open Terminal and navigate to the project folder:
    ```bash
    cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
-
