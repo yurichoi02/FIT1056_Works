@@ -1,46 +1,30 @@
-# Music School Management System (MSMS)
+# FIT1056 Works – Software Engineering Portfolio
 
-**FIT1056 – Introduction to Software Engineering**  
-**Semester 2, 2025 — PST1: The In-Memory Prototype**
-
----
-
-##  Project Overview
-
-This is the first stage (PST1) of a multi-phase software engineering project. The goal is to create a basic Music School Management System (MSMS) that supports core functionalities using **in-memory data structures** only.
-
-All logic is implemented in a single file (`MSMS.py`) and all data will be lost once the program stops — perfect for quick iteration and focusing on logic.
+This repository contains all individual and group works completed for **FIT1056 – Introduction to Software Engineering**, Semester 2, 2025.
 
 ---
 
-##  Features Implemented
+## Repository Structure
 
-### Fragment 1.1 – Data Structures
-- `Student` class (ID, name, list of instruments)
-- `Teacher` class (ID, name, specialty)
-- `student_db` and `teacher_db` as in-memory "databases"
-- Auto-incrementing ID counters
-
-### Fragment 1.2 – Core Helper Functions
-- `add_teacher(name, specialty)`
-- `list_students()`, `list_teachers()`
-- `find_students(term)`, `find_teachers(term)`
-
-### Fragment 1.3 – Front Desk Functions
-- `find_student_by_id(student_id)`
-- `front_desk_register(name, instrument)`
-- `front_desk_enrol(student_id, instrument)`
-- `front_desk_lookup(term)`
-
-### Fragment 1.4 – Main Menu Loop
-- Interactive console menu using `while True`
-- Accepts user input and runs front desk features
+FIT1056_Works/
+├── individual/ # Personal PST1–PST5 tasks
+│ ├── PST1/ # PST1: MSMS In-Memory Prototype
+│ ├── PST2/
+│ ├── PST3/
+│ ├── PST4/
+│ ├── PST5/
+│ └── my_python_works/
+├── project/ # Group project work
+│ └── group_project/
+└── README.md # This file
 
 ---
 
-##  How to Run
+## Navigation
 
-1. Open Terminal and go to the project folder:
-   ```bash
-   cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
+-  [`individual/`](./individual/) — Contains personal milestone tasks PST1 to PST5.
+-  [`project/`](./project/) — Group-based software development project.
 
+Each subfolder contains its own `README.md` where relevant, with detailed documentation.
+
+---
