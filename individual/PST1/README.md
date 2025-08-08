@@ -1,15 +1,15 @@
 # Music School Management System (MSMS)
 
-**FIT1056 – Introduction to Software Engineering**  
-**Semester 2, 2025 — PST1: The In-Memory Prototype**
+FIT1056 – Introduction to Software Engineering  
+Semester 2, 2025 — PST1: The In-Memory Prototype
 
 ---
 
 ## Project Overview
 
-This is the first stage (PST1) of a multi-phase software engineering project. The goal is to develop a basic Music School Management System (MSMS) that supports core operations using **in-memory data structures** only.
+This is the first stage (PST1) of a multi-phase software engineering project. The goal is to develop a basic Music School Management System (MSMS) that supports core operations using in-memory data structures only.
 
-The system logic is implemented in a single file (`MSMS.py`). Since this is an in-memory prototype, all data will be lost once the program stops — ideal for focusing on functionality and logic design.
+The system logic is implemented in a single file (`MSMS.py`). Since this is an in-memory prototype, all data will be lost once the program stops. This allows the focus to be on functionality and logic design.
 
 ---
 
@@ -43,3 +43,4 @@ The system logic is implemented in a single file (`MSMS.py`). Since this is an i
 1. Open Terminal and navigate to the project folder:
    ```bash
    cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
+
