@@ -1,7 +1,8 @@
 # FIT1056 Works – Software Engineering Portfolio
 
-**FIT1056 – Introduction to Software Engineering**  
-**Semester 2, 2025**
+**Student:** Choi Yuri – 33705437
+**GitHub:** https://github.com/yurichoi02/FIT1056_Works  
+
 
 ---
 

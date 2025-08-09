@@ -3,6 +3,9 @@
 **FIT1056 – Introduction to Software Engineering**  
 **Semester 2, 2025 — PST1: The In-Memory Prototype**
 
+**Student:** Choi Yuri – 33705437
+**GitHub:** https://github.com/yurichoi02/FIT1056_Works  
+
 ---
 
 ## Project Overview
@@ -43,3 +46,7 @@ The system logic is implemented in a single file (`MSMS.py`). Since this is an i
 1. Open Terminal and navigate to the project folder:
    ```bash
    cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
+
+2. Run the Python program:
+   ```bash
+   Python3 MSMS.py
