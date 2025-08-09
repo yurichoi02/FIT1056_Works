@@ -1,7 +1,15 @@
 # Music School Management System (MSMS)
 
+Monash University Malaysia
 FIT1056 – Introduction to Software Engineering  
 Semester 2, 2025 — PST1: The In-Memory Prototype
+
+---
+
+## Author Information
+- Name: Choi Yuri 
+- Student ID: 33705437
+- Git Repository: https://github.com/yurichoi02/FIT1056_Works
 
 ---
 
@@ -44,3 +52,6 @@ The system logic is implemented in a single file (`MSMS.py`). Since this is an i
    ```bash
    cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
 
+2. Run the Python program:
+```bash
+   Python3 MSMS.py
