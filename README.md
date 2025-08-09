@@ -1,5 +1,10 @@
 # FIT1056 Works – Software Engineering Portfolio
 
+**FIT1056 – Introduction to Software Engineering**  
+**Semester 2, 2025**
+
+---
+
 This repository contains all individual and group works completed for **FIT1056 – Introduction to Software Engineering**, Semester 2, 2025.
 
 ---
