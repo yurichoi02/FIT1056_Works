@@ -14,7 +14,7 @@ This repository contains all individual and group works completed for **FIT1056 
 
 FIT1056_Works/
 ├── individual/ # Personal PST1–PST5 tasks
-│ ├── PST1/ # PST1: MSMS In-Memory Prototype
+│ ├── PST1/
 │ ├── PST2/
 │ ├── PST3/
 │ ├── PST4/
