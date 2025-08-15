@@ -1,54 +1,56 @@
-# --- Full CRUD for Core Data ---
-# Note: We are now working with lists of dictionaries, not lists of objects.
+# Fragment2_2.py
+# CRUD operations for Teachers and Students
+
+from MSMS import app_data
 
 def add_teacher(name, speciality):
-    """Add a new teacher."""
-    teacher_id = app_data["next_teacher_id"]
-    new_teacher = {"id": teacher_id, "name": name, "speciality": speciality}
-    app_data["teachers"].append(new_teacher)
+    tid = app_data["next_teacher_id"]
+    teacher = {"id": tid, "name": name, "speciality": speciality}
+    app_data["teachers"].append(teacher)
     app_data["next_teacher_id"] += 1
-    print(f"Teacher '{name}' added with ID {teacher_id}.")
+    print(f"Teacher '{name}' added.")
 
-
-def update_teacher(teacher_id, **fields):
-    """Update teacher details."""
-    for teacher in app_data["teachers"]:
-        if teacher["id"] == teacher_id:
-            for key, value in fields.items():
-                if value:  # Only update if not empty
-                    teacher[key] = value
+def update_teacher(teacher_id, new_name=None, new_speciality=None):
+    for t in app_data["teachers"]:
+        if t["id"] == teacher_id:
+            if new_name:
+                t["name"] = new_name
+            if new_speciality:
+                t["speciality"] = new_speciality
             print(f"Teacher {teacher_id} updated.")
             return
-    print(f"No teacher found with ID {teacher_id}.")
-
+    print("Teacher not found.")
 
 def remove_teacher(teacher_id):
-    """Remove a teacher by ID."""
-    before = len(app_data["teachers"])
-    app_data["teachers"] = [t for t in app_data["teachers"] if t["id"] != teacher_id]
-    if len(app_data["teachers"]) < before:
-        print(f"Teacher {teacher_id} removed.")
-    else:
-        print(f"No teacher found with ID {teacher_id}.")
+    for t in app_data["teachers"]:
+        if t["id"] == teacher_id:
+            app_data["teachers"].remove(t)
+            print(f"Teacher {teacher_id} removed.")
+            return
+    print("Teacher not found.")
 
+def add_student(name, instrument):
+    sid = app_data["next_student_id"]
+    student = {"id": sid, "name": name, "instrument": instrument}
+    app_data["students"].append(student)
+    app_data["next_student_id"] += 1
+    print(f"Student '{name}' added.")
 
-def update_student(student_id, **fields):
-    """Update student details."""
-    for student in app_data["students"]:
-        if student["id"] == student_id:
-            for key, value in fields.items():
-                if value:
-                    student[key] = value
+def update_student(student_id, new_name=None, new_instrument=None):
+    for s in app_data["students"]:
+        if s["id"] == student_id:
+            if new_name:
+                s["name"] = new_name
+            if new_instrument:
+                s["instrument"] = new_instrument
             print(f"Student {student_id} updated.")
             return
-    print(f"No student found with ID {student_id}.")
-
+    print("Student not found.")
 
 def remove_student(student_id):
-    """Remove a student by ID."""
-    before = len(app_data["students"])
-    app_data["students"] = [s for s in app_data["students"] if s["id"] != student_id]
-    if len(app_data["students"]) < before:
-        print(f"Student {student_id} removed.")
-    else:
-        print(f"No student found with ID {student_id}.")
+    for s in app_data["students"]:
+        if s["id"] == student_id:
+            app_data["students"].remove(s)
+            print(f"Student {student_id} removed.")
+            return
+    print("Student not found.")

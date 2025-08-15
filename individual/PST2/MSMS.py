@@ -1,32 +1,25 @@
-# pst2_main.py - The Persistent Application
+# MSMS.py
+# Core data store for the Music School Management System (MSMS)
 
-import json
-import datetime
+# Global app data dictionary
+app_data = {
+    "teachers": [],
+    "students": [],
+    "next_teacher_id": 1,
+    "next_student_id": 1
+}
 
-DATA_FILE = "msms.json"
-app_data = {}  # Holds all data for the application
+def load_data():
+    """Loads initial data into the system (in-memory only for PST2)."""
+    app_data["teachers"] = [
+        {"id": 1, "name": "John Smith", "speciality": "Piano"}
+    ]
+    app_data["students"] = [
+        {"id": 1, "name": "Alice Tan", "instrument": "Piano"}
+    ]
+    app_data["next_teacher_id"] = 2
+    app_data["next_student_id"] = 2
 
-# --- Core Persistence Engine ---
-def load_data(path=DATA_FILE):
-    """Load data from a JSON file, or start fresh if file not found."""
-    global app_data
-    try:
-        with open(path, "r") as f:
-            app_data = json.load(f)
-            print("Data loaded.")
-    except FileNotFoundError:
-        print("No data file found. Starting with empty data.")
-        app_data = {
-            "students": [],
-            "teachers": [],
-            "attendance": [],
-            "next_student_id": 1,
-            "next_teacher_id": 1
-        }
-
-
-def save_data(path=DATA_FILE):
-    """Save all data to a JSON file."""
-    with open(path, "w") as f:
-        json.dump(app_data, f, indent=4)
-    print("Data saved.")
+def save_data():
+    """Pretends to save data (no file handling in PST2)."""
+    print("\n[Data saved successfully]")
