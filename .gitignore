@@ -10,7 +10,7 @@ __pycache__/
 student_*_card.txt
 
 # --- PST2 ignores ---
-msms.json
+/individual/PST2/msms.json
 exports/
 student_*_card.txt
 
