@@ -1,1 +1,18 @@
+# macOS system files
 .DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# --- PST1 ignores ---
+# (PST1 was in-memory, so no JSON/exports, but ignore cache just in case)
+student_*_card.txt
+
+# --- PST2 ignores ---
+msms.json
+exports/
+student_*_card.txt
+
+# --- General ignores ---
+*.zip   # e.g. PST3 app.zip, data.zip
