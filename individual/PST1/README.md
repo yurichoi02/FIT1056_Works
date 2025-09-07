@@ -1,36 +1,33 @@
 # Music School Management System (MSMS)
 
-Monash University Malaysia
 FIT1056 – Introduction to Software Engineering  
-Semester 2, 2025 — PST1: The In-Memory Prototype
+Semester 2, 2025 — PST1
 
 ---
 
-## Author Information
-- Name: Choi Yuri 
+## Author
+- Name: Choi Yuri
 - Student ID: 33705437
-- Git Repository: https://github.com/yurichoi02/FIT1056_Works
 
 ---
 
-## Project Overview
+## Overview
+This is the first stage of a multi-phase project. PST1 builds an **in-memory** prototype of a Music School Management System.  
+All data lives in memory and resets when the program ends.
 
-This is the first stage (PST1) of a multi-phase software engineering project. The goal is to develop a basic Music School Management System (MSMS) that supports core operations using in-memory data structures only.
-
-The system logic is implemented in a single file (`MSMS.py`). Since this is an in-memory prototype, all data will be lost once the program stops. This allows the focus to be on functionality and logic design.
+Main, runnable code is in **MSMS.py**. The `Fragment*.py` files are **templates** that show what was covered in each fragment; the implementations are in `MSMS.py`.
 
 ---
 
-## Features Implemented
+## Features
 
 ### Fragment 1.1 – Data Structures
-- `Student` class (ID, name, list of instruments)
-- `Teacher` class (ID, name, specialty)
-- In-memory "databases": `student_db`, `teacher_db`
-- Auto-incrementing ID counters
+- `Student` and `Teacher` classes
+- In-memory lists: `student_db`, `teacher_db`
+- Auto-increment IDs for students and teachers
 
 ### Fragment 1.2 – Core Helper Functions
-- `add_teacher(name, specialty)`
+- `add_teacher(name, speciality)`
 - `list_students()`, `list_teachers()`
 - `find_students(term)`, `find_teachers(term)`
 
@@ -40,18 +37,22 @@ The system logic is implemented in a single file (`MSMS.py`). Since this is an i
 - `front_desk_enrol(student_id, instrument)`
 - `front_desk_lookup(term)`
 
-### Fragment 1.4 – Main Menu Loop
-- Interactive console menu for receptionist role
-- Accepts user input for registration, enrolment, and search
+### Fragment 1.4 – Main Menu
+- Console menu tying everything together
+
+---
+
+## Extra Functionality (PST1)
+1) **Instrument summary and search**
+- `list_instruments_summary()` → shows each instrument and how many students learn it.
+- `find_students_by_instrument(term)` → search students by instrument (case-insensitive).
+
+2) **Assign teachers to students**
+- `assign_teacher(student_id, instrument, teacher_id)` → assign if speciality matches and the student is enrolled.
+- `view_assignments_for_student(student_id)` → view a student’s instruments and assigned teachers.
 
 ---
 
 ## How to Run
-
-1. Open Terminal and navigate to the project folder:
-   ```bash
-   cd /Users/choiyuri/Desktop/monash_works/FIT1056_Works/individual/PST1
-
-2. Run the Python program:
 ```bash
-   Python3 MSMS.py
+python3 MSMS.py
