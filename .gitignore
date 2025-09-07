@@ -16,4 +16,7 @@ student_*_card.txt
 
 # --- General ignores ---
 *.zip   # e.g. PST3 app.zip, data.zip
-.gitkeep
+
+# ignore placeholder files, but only if not already tracked
+*.gitkeep
+
