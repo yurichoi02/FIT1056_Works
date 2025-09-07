@@ -15,6 +15,7 @@ This is **PST3**, where the project moves from procedural scripts into a proper 
 ```
 PST3/
  ├─ app/
+ │   ├─ init.py        # marks app as a package, re-exports key classes
  │   ├─ user.py        # base User class
  │   ├─ student.py     # StudentUser class
  │   ├─ teacher.py     # TeacherUser + Course
@@ -60,7 +61,7 @@ PST3/
 ## How to Run
 From inside the `PST3` folder:
 ```bash
-python3 main.py
+python3 MSMS.py
 ```
 
 ---
