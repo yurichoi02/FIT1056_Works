@@ -20,3 +20,7 @@ student_*_card.txt
 # ignore placeholder files, but only if not already tracked
 *.gitkeep
 
+# --- New ignores for PST4 / local dev ---
+.venv/              # virtual environment
+.streamlit/         # local streamlit secrets and state
+my_python_works/    # my local experiments (week9_applied etc.)
