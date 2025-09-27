@@ -1,0 +1,96 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Lisa",
+      "enrolled_course_ids": [
+        101
+      ],
+      "registered_at": "2025-09-27T18:41:18",
+      "preferred_instrument": "Piano"
+    },
+    {
+      "id": 2,
+      "name": "Rose",
+      "enrolled_course_ids": [
+        102
+      ],
+      "registered_at": "2025-09-27T18:41:39",
+      "preferred_instrument": "Guitar"
+    },
+    {
+      "id": 3,
+      "name": "Jisoo",
+      "enrolled_course_ids": [
+        102
+      ],
+      "registered_at": "2025-09-27T18:41:50",
+      "preferred_instrument": "Guitar"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Dr. Evelyn Keys",
+      "speciality": "Piano"
+    },
+    {
+      "id": 2,
+      "name": "Jennie Kim",
+      "speciality": "Violin"
+    }
+  ],
+  "courses": [
+    {
+      "id": 101,
+      "name": "Piano Basics",
+      "instrument": "Piano",
+      "teacher_id": 1,
+      "enrolled_student_ids": [
+        1
+      ],
+      "lessons": [
+        {
+          "lesson_id": 1,
+          "day": "Monday",
+          "start_time": "16:00",
+          "room": "Room A"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Guitar Intro",
+      "instrument": "Guitar",
+      "teacher_id": 1,
+      "enrolled_student_ids": [
+        2,
+        3
+      ],
+      "lessons": [
+        {
+          "lesson_id": 2,
+          "day": "Wednesday",
+          "start_time": "17:00",
+          "room": "Room B"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Violin Intro",
+      "instrument": "Violin",
+      "teacher_id": 2,
+      "enrolled_student_ids": [],
+      "lessons": [
+        {
+          "lesson_id": 3,
+          "day": "Tuesday",
+          "start_time": "14:00",
+          "room": "Room C"
+        }
+      ]
+    }
+  ],
+  "attendance": []
+}
