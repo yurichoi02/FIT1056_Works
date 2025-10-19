@@ -1,26 +1,36 @@
-# macOS system files
+# macOS
 .DS_Store
 
-# Python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
 
-# --- PST1 ignores ---
-# (PST1 was in-memory, no persistence, but student cards could be generated)
-student_*_card.txt
+# Virtual env
+.venv/
 
-# --- PST2 ignores ---
-/individual/PST2/msms.json
-/individual/PST2/exports/
-/individual/PST2/student_*_card.txt
+# Streamlit local config/state
+.streamlit/
 
-# --- General ignores ---
-*.zip   # e.g. PST3 app.zip, data.zip
+# General
+*.zip
 
-# ignore placeholder files, but only if not already tracked
+# Ignore placeholder keepers unless already tracked
 *.gitkeep
 
-# --- New ignores for PST4 / local dev ---
-.venv/              # virtual environment
-.streamlit/         # local streamlit secrets and state
-my_python_works/    # my local experiments (week9_applied etc.)
+# Coursework-specific ignores
+# --- PST2 ---
+individual/PST2/msms.json
+individual/PST2/exports/
+individual/PST2/student_*_card.txt
+
+# --- PST5 runtime artifacts ---
+individual/PST5/logs/
+individual/PST5/data/msms.json
+individual/PST5/data/backups/
+individual/PST5/exports/
+
+# Local experiments (keep out of repo)
+individual/my_python_works/
